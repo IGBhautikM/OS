@@ -7,8 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  console.log(os.hostname());
-  res.end();
+  res.end(os.hostname());
 });
 
 app.listen(5000, () => {
